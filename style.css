@@ -20,7 +20,15 @@ body {
 }
 
 .stats-container {
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
