@@ -189,3 +189,43 @@ firstGameContainer.append(top);
 const runnerUp = document.createElement("p");
 runnerUp.innerHTML = second.name;
 secondGameContainer.append(runnerUp);
+
+
+/*
+ * Customizations: Adding additional features
+ * Adding search features
+ */ 
+
+//Adding search bar and button
+// grab game section container
+const gamesSection = document.getElementById("button-container");
+
+// create search bar and append it to the container
+const searchBox = document.createElement("input");
+searchBox.setAttribute("type", "text");
+searchBox.setAttribute("value", "Search for a game");
+gamesSection.append(searchBox);
+
+
+// create search button and append it to the container
+const searchButton = document.createElement("button");
+searchButton.innerHTML = "Search";
+gamesSection.append(searchButton);
+// add event listener to search for game
+searchButton.addEventListener("click", searchGame);
+
+
+// show games that were search for
+function searchGame(){
+    // clear games
+    deleteChildElements(gamesContainer);
+
+    // reduce to games where the name or description includes the search text
+    const games = GAMES_JSON.filter( (game) => {
+        return game.name.includes(searchBox.value) || game.description.includes(searchBox.value);
+    })
+
+    // add games to page if term is included in card; show alert if not found
+    games != false ? addGamesToPage(games) : alert("Game not found.");
+}
+
