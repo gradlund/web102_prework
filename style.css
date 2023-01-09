@@ -20,7 +20,7 @@ body {
 }
 
 .stats-container {
-    font-family: 'Courier New', Courier, monospace;
+    /*font-family: 'Courier New', Courier, monospace;*/
     display: flex;
     align-items: center;
     padding: 1%;
