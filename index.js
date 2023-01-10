@@ -222,10 +222,20 @@ function searchGame(){
 
     // reduce to games where the name or description includes the search text
     const games = GAMES_JSON.filter( (game) => {
-        return game.name.includes(searchBox.value) || game.description.includes(searchBox.value);
+        //update this
+        return game.name.toLowerCase().includes(searchBox.value.toLowerCase()) || 
+        game.description.toLowerCase().includes(searchBox.value.toLowerCase());
     })
 
     // add games to page if term is included in card; show alert if not found
     games != false ? addGamesToPage(games) : alert("Game not found.");
 }
 
+// navbar
+const mainBar = document.getElementById("mainBar");
+const nav = document.createElement("nav");
+nav.innerHTML = 
+   `<a href="#welcome">Welcome</a>
+    <a href="#stats">Stats</a>
+    <a href="#our-games">Games</a>`;
+    mainBar.append(nav);
