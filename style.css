@@ -22,7 +22,7 @@ p {
 
 #tentacles {
     width: 50px;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
 .header-text {
@@ -32,7 +32,7 @@ p {
 }
 
 nav {
-    margin-right: 50px;
+    padding-right: 40px;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -51,12 +51,11 @@ a:hover {
 
 .header {
     display: flex;
-    /*justify-content: space-between;*/
     background-color: lightblue;
     padding: 1%;
     align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
     margin-top: -10px;
 }
 
@@ -93,7 +92,7 @@ a:hover {
 }
 
 .game-img {
-    width: 100%;
+    width: 23vw;
     border-radius: 5px;
     box-shadow: 0 0 10px #FFFFFF;
 }
@@ -102,17 +101,17 @@ a:hover {
     background-color: #FFFFFF;
     padding: 1%;
     margin: 1%;
-    width: 300px;
+    width: 25vw;
     text-align: center;
     border-radius: 7px;
 }
 
 .game-card h3 {
-    font-size: 3vh;
+    font-size: 2.25vh;
 }
 
 .game-card p {
-    font-size: 2vh;
+    font-size: 1.75vh;
 }
 
 .game-card:hover {
@@ -129,7 +128,7 @@ button {
     border: none;
     padding: 1%;
     margin: 1%;
-    margin-right: 2vh;
+    margin-right: 2vw;
     border-radius: 7px;
     font-size: 2vh;
     font-family: 'Cabin', 'Franklin Gothic Medium', 'Arial Narrow';
@@ -147,5 +146,5 @@ input {
 }
 
 #content {
-    margin: 5%;
+    padding: 5%;
 }
