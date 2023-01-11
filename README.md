@@ -4,7 +4,7 @@ Submitted by: **Grace Radlund**
 
 **Sea Capital** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **4** hours spent in total
+Time spent: **5** hours spent in total
 
 ## Required Features
 
@@ -24,7 +24,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgur.com/nAUKTwq' title='Video Walkthrough' width='500px' alt='Video Walkthrough' />
+<img src="https://imgur.com/p4zs8DG" title='Video Walkthrough' width='500px' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ezgif.com  
@@ -36,6 +36,11 @@ GIF created with ezgif.com
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+- CSS for the header class was resulting in a horizontal scrollbar. Decreased the margins, which eliminated this issue.
+- Search game was not returning games if capitalization wasn't correct. Fixed this by making the game name and description, as well as the search text, lowercase.
+- Initialy used backers instead of pledged when checking to see if games had met there goal.
+This was resolved through troubleshooting and the correct game cards were displayed.
 
 ## License
 
