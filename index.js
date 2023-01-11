@@ -50,7 +50,6 @@ function addGamesToPage(games) {
         // append the game to the games-container
         gamesContainer.append(div);
     }
-
 }
 
 // call the function we just defined using the correct variable
@@ -231,6 +230,7 @@ function searchGame(){
 
 
 // navbar
+// grab top container and create nav element
 const mainBar = document.getElementById("mainBar");
 const nav = document.createElement("nav");
 
@@ -240,5 +240,5 @@ nav.innerHTML =
     <a href="#stats">Stats</a>
     <a href="#our-games">Games</a>`;
 
-// append nav bar    
+// append nav bar
 mainBar.append(nav);
