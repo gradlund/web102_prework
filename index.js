@@ -197,7 +197,7 @@ secondGameContainer.append(runnerUp);
  */ 
 
 //Adding search bar and button
-// grab game section container
+// grab button container
 const gamesSection = document.getElementById("button-container");
 
 // create search bar and append it to the container
@@ -206,16 +206,14 @@ searchBox.setAttribute("type", "text");
 searchBox.setAttribute("value", "Search for a game");
 gamesSection.append(searchBox);
 
-
 // create search button and append it to the container
 const searchButton = document.createElement("button");
 searchButton.innerHTML = "Search";
 gamesSection.append(searchButton);
-// add event listener to search for game
+// add event listener to search for game(s)
 searchButton.addEventListener("click", searchGame);
 
-
-// show games that were search for
+// show games that were searched for
 function searchGame(){
     // clear games
     deleteChildElements(gamesContainer);
@@ -231,11 +229,16 @@ function searchGame(){
     games != false ? addGamesToPage(games) : alert("Game not found.");
 }
 
+
 // navbar
 const mainBar = document.getElementById("mainBar");
 const nav = document.createElement("nav");
+
+// set inner HTML to include three links to three different sections on the page
 nav.innerHTML = 
    `<a href="#welcome">Welcome</a>
     <a href="#stats">Stats</a>
     <a href="#our-games">Games</a>`;
-    mainBar.append(nav);
+
+// append nav bar    
+mainBar.append(nav);
