@@ -38,9 +38,8 @@ GIF created with ezgif.com
 Describe any challenges encountered while building the app.
 
 - CSS for the header class was resulting in a horizontal scrollbar. Decreased the margins, which eliminated this issue.
-- Search game was not returning games if capitalization wasn't correct. Fixed this by making the game name and description, as well as the search text, lowercase.
-- Initialy used backers instead of pledged when checking to see if games had met there goal.
-This was resolved through troubleshooting and the correct game cards were displayed.
+- Search game was not returning games if capitalization was not correct. Fixed this by making the game name and description, as well as the search text, lowercase when seeing if the text was included in the game name and/or description.
+- Initialy used backers instead of pledged when checking to see if games had met there goal. This was resolved through troubleshooting - then the correct game cards were displayed.
 
 ## License
 
